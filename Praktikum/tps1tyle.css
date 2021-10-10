@@ -1,0 +1,28 @@
+.navbar-brand img {
+    height: 3rem;
+}
+
+.navbar {
+    background-color: rgb(253, 235, 198);
+    font-size: 1.2rem;
+    font-family: monospace;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+    z-index: 1;
+}
+
+.nav-item {
+    padding: .5rem;
+}
+
+.nav-link {
+    color: #FF2442 !important;
+
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #FFB830 !important;
+
+}
