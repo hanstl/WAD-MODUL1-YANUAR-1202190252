@@ -1,276 +1,273 @@
-<!doctype html>
-<html lang="en">
+    <!doctype html>
+    <html lang="en">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
+        <!-- Bootstrap CSS -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+        <style>
+            body {
+                overflow-x: hidden;
+                font-family: 'Montserrat', sans-serif;
+                color: #FF2442;
+            }
 
-    <style>
-        body {
-            overflow-x: hidden;
-            font-family: 'Montserrat', sans-serif;
-            color: #FF2442;
-        }
+            .nav-link.active,
+            .nav-link:hover {
+                color: #FFB830 !important;
 
-        .nav-link.active,
-        .nav-link:hover {
-            color: #FFB830 !important;
+            }
 
-        }
+            .navbar-brand img {
+                height: 3rem;
+            }
 
-        .navbar-brand img {
-            height: 3rem;
-        }
+            .navbar {
+                background-color: rgb(253, 235, 198);
+                font-size: 1.2rem;
+                font-family: monospace;
+                font-weight: 500;
+                letter-spacing: .1rem;
+                box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+                z-index: 1;
+            }
 
-        .navbar {
-            background-color: rgb(253, 235, 198);
-            font-size: 1.2rem;
-            font-family: monospace;
-            font-weight: 500;
-            letter-spacing: .1rem;
-            box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
-            z-index: 1;
-        }
+            .nav-item {
+                padding: .5rem;
+            }
 
-        .nav-item {
-            padding: .5rem;
-        }
+            .nav-link {
+                color: #FF2442 !important;
 
-        .nav-link {
-            color: #FF2442 !important;
+            }
 
-        }
+            .layanan,
+            .tentang {
+                background: #FFEDDA;
+            }
 
-        .layanan,
-        .tentang {
-            background: #FFEDDA;
-        }
+            .card {
+                box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+            }
 
-        .card {
-            box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
-        }
+            .formulir {
+                margin-bottom: 15px;
+                align-items: center;
+            }
 
-        .formulir {
-            margin-bottom: 15px;
-            align-items: center;
-        }
+            .formulir label {
+                width: 180px;
+                margin-right: 10px;
+                margin-left: 20px;
+            }
 
-        .formulir label {
-            width: 180px;
-            margin-right: 10px;
-            margin-left: 20px;
-        }
+            .formulir input {
+                margin-left: auto;
+            }
 
-        .formulir input {
-            margin-left: auto;
-        }
+            button {
+                margin-left: 20px;
+            }
 
-        button {
-            margin-left: 20px;
-        }
+            .metode {
+                margin-left: 220px;
+            }
 
-        .metode {
-            margin-left: 220px;
-        }
-
-        .metode label {
-            width: 100px;
-            margin-left: 5px;
-        }
-    </style>
+            .metode label {
+                width: 100px;
+                margin-left: 5px;
+            }
+        </style>
 
 
-    <title>MODUL1 YANUAR</title>
-</head>
+        <title>MODUL1 YANUAR</title>
+    </head>
 
-<body>
-    <section class="navigation_bar">
-        <nav class="navbar navbar-expand-lg">
+    <body>
+        <section class="navigation_bar">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="img/logo-ead.png" alt="Logo" title="Logo"></a>
+
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarmenu">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item "><a href="#index.html" class="nav-link text-light" active>Home</a></li>
+                            <li class="nav-item"><a href="#tentang" class="nav-link text-light">About</a></li>
+                            <li class="nav-item"><a href="#layanan" class="nav-link text-light">Layanan</a></li>
+                            <li class="nav-item"><a href="#registrasi" class="nav-link text-light">Registrasi</a></li>
+
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+
+                </div>
+            </nav>
+        </section>
+
+        <section class="jbvideo bg-info">
+            <div class="super_jumbotron py-4 mb-0 text-center">
+                <iframe vid_src="https://www.youtube.com/embed/AwMeQJ_u73I" frameborder="0"
+                    allow="accelerometer;autoplay;encrypted-media">
+                </iframe>
+                <h1 class="text-center pt-3">Klinik EAD</h1>
+                <p class="text-center">Klinik EAD merupakan klinik yang menyediakan layanan tes Covid19</p>
+            </div>
+        </section>
+
+        <section class="tentang" id="tentang">
+            <div class="container text-center py-4">
+                <div class="row">
+                    <div class="col-sm-12 ">
+                        <h3>Tentang Kami</h3>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur maxime officia voluptate
+                            consectetur recusandae doloribus enim qui impedit reiciendis delectus architecto, dolorem
+                            tempora deleniti quam aperiam ipsa ex, aliquam distinctio!
+                        </p>
+                    </div>
+                    <div class="col-sm-6 flex-">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae inventore quae, quasi itaque
+                            perferendis blanditiis. Minima rem vel maxime et commodi? Accusantium nesciunt similique soluta
+                            et blanditiis tempore. Ab, voluptas?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="layanan" id="layanan">
             <div class="container">
-                <a href="index.html" class="navbar-brand">
-                    <img src="img/logo-ead.png" alt="Logo" title="Logo"></a>
-
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarmenu">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item "><a href="#index.html" class="nav-link text-light" active>Home</a></li>
-                        <li class="nav-item"><a href="#tentang" class="nav-link text-light">About</a></li>
-                        <li class="nav-item"><a href="#layanan" class="nav-link text-light">Layanan</a></li>
-                        <li class="nav-item"><a href="#registrasi" class="nav-link text-light">Registrasi</a></li>
-
-                    </ul>
-
-                </div>
-
-
+                <h3 class="text-center pt-6 py-3">Jenis Test</h3>
+                <hr>
             </div>
-
-
-            </div>
-        </nav>
-    </section>
-
-    <section class="jbvideo bg-info">
-        <div class="jumbtron py-4 mb-0 text-center">
-            <iframe src="https://www.youtube.com/embed/AwMeQJ_u73I" frameborder="0"
-                allow="accelerometer;autoplay;encrypted-media">
-            </iframe>
-            <h1 class="text-center pt-3">Klinik EAD</h1>
-            <p class="text-center">Klinik EAD merupakan klinik yang menyediakan layanan tes Covid19</p>
-        </div>
-    </section>
-
-    <section class="tentang" id="tentang">
-        <div class="container text-center py-4">
-            <div class="row">
-                <div class="col-sm-12 ">
-                    <h3>Tentang Kami</h3>
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur maxime officia voluptate
-                        consectetur recusandae doloribus enim qui impedit reiciendis delectus architecto, dolorem
-                        tempora deleniti quam aperiam ipsa ex, aliquam distinctio!
-                    </p>
-                </div>
-                <div class="col-sm-6 flex-">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae inventore quae, quasi itaque
-                        perferendis blanditiis. Minima rem vel maxime et commodi? Accusantium nesciunt similique soluta
-                        et blanditiis tempore. Ab, voluptas?</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="layanan" id="layanan">
-        <div class="container">
-            <h3 class="text-center pt-6 py-3">Jenis Test</h3>
-            <hr>
-        </div>
-        <div class="container">
-            <row class="row my-5">
-                <div class="col-md-4 my-1 mb-3">
-                    <div class="card bg-info">
-                        <img src="img/antigen.jpg" alt="Tes Antigen" style="width: 100%;">
-                        <h4 class="my-2 px-3"><b>Tes Antigen</b></h4>
-                        <p class="px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe cupiditate
-                            perferendis tenetur harum ratione culpa provident dolorem rerum eligendi esse rem vero
-                            suscipit alias error, reiciendis quisquam enim voluptatibus asperiores.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4 my-1 mb-3">
-                    <div class="card bg-info">
-                        <img src="img/pcr.jpg" alt="PCR" style="width: 100%;">
-                        <h4 class="my-2 px-3"><b>Tes PCR</b></h4>
-                        <p class="px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe cupiditate
-                            perferendis tenetur harum ratione culpa provident dolorem rerum eligendi esse rem vero
-                            suscipit alias error, reiciendis quisquam enim voluptatibus asperiores.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4 my-1 mb-3">
-                    <div class="card bg-info">
-                        <img src="img/antibodies.jpg" alt="Tes Antibody" style="width: 100%;">
-                        <h4 class="my-2 px-3"><b>Tes Antibodies</b></h4>
-                        <p class="px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe cupiditate
-                            perferendis tenetur harum ratione culpa provident dolorem rerum eligendi esse rem vero
-                            suscipit alias error, reiciendis quisquam enim voluptatibus asperiores.</p>
-                    </div>
-                </div>
-            </row>
-        </div>
-    </section>
-
-    <section class="registrasi" id="registrasi">
-
-        <div class="container">
-            <h3 class="text-center pt-6 py-3">
-                Registrasi
-            </h3>
-            <hr>
-            <div class="formulir">
-                <form action="">
-                    <div class="formulir">
-                        <div class="namalengkap">
-                            <label for="nama">
-                                Nama
-                            </label>
-                            <input type="text" id="nama" class="col-lg-8 col-sm-12 col-xs-12" name="nama" value="nama">
+            <div class="container">
+                <row class="row my-5">
+                    <div class="col-md-4 my-1 mb-3">
+                        <div class="card bg-info">
+                            <img src_image="img/antigen.jpg" alt="Tes Antigen" style="width: 100%;">
+                            <h4 class="my-2 px-3"><b>Tes Antigen</b></h4>
+                            <p class="px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe cupiditate
+                                perferendis tenetur harum ratione culpa provident dolorem rerum eligendi esse rem vero
+                                suscipit alias error, reiciendis quisquam enim voluptatibus asperiores.</p>
                         </div>
+                    </div>
 
-                        <div class="No_tlp">
-                            <label class="py-3 col-sm-12" for="notlp">
-                                Nomor HP
-                            </label>
-                            <input type="text" id="notlp" class="col-lg-8 col-sm-12 col-xs-12" name="notlp"
-                                value="notlp">
+                    <div class="col-md-4 my-1 mb-3">
+                        <div class="card bg-info">
+                            <img src="img/pcr.jpg" alt="PCR" style="width: 100%;">
+                            <h4 class="my-2 px-3"><b>Tes PCR</b></h4>
+                            <p class="px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe cupiditate
+                                perferendis tenetur harum ratione culpa provident dolorem rerum eligendi esse rem vero
+                                suscipit alias error, reiciendis quisquam enim voluptatibus asperiores.</p>
                         </div>
+                    </div>
 
-                        <div class="riwayat">
-                            <label for="rwyt">
-                                Riwayat Penyakit
-                            </label>
-                            <textarea type="text" id="rwyt" class="col-lg-8 col-sm-12 col-xs-12">
-                        </textarea>
+                    <div class="col-md-4 my-1 mb-3">
+                        <div class="card bg-info">
+                            <img src="img/antibodies.jpg" alt="Tes Antibody" style="width: 100%;">
+                            <h4 class="my-2 px-3"><b>Tes Antibodies</b></h4>
+                            <p class="px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe cupiditate
+                                perferendis tenetur harum ratione culpa provident dolorem rerum eligendi esse rem vero
+                                suscipit alias error, reiciendis quisquam enim voluptatibus asperiores.</p>
                         </div>
+                    </div>
+                </row>
+            </div>
+        </section>
 
-                        <div class="pembayaran">
-                            <label class="py-3 col-sm-12" for="pembayaran">
-                                Pembayaran
-                            </label>
-                            <div class="metode ml-6">
-                                <input type="radio" id="tunai" name="bayar">
-                                <label for="tunai">
-                                    Tunai
+        <section class="registrasi" id="registrasi">
+
+            <div class="container">
+                <h3 class="text-center pt-6 py-3">
+                    Registrasi
+                </h3>
+                <hr>
+                <div class="formulir">
+                    <form action="">
+                        <div class="formulir">
+                            <div class="namalengkap">
+                                <label for="nama">
+                                    Nama
                                 </label>
-                                <input type="radio" id="transfer" name="bayar">
-                                <label for="transfer">
-                                    Transfer
-                                </label>
+                                <input type="text" id="nama" class="col-lg-8 col-sm-12 col-xs-12" name="nama" value="nama">
                             </div>
+
+                            <div class="No_tlp">
+                                <label class="py-3 col-sm-12" for="notlp">
+                                    Nomor HP
+                                </label>
+                                <input type="text" id="notlp" class="col-lg-8 col-sm-12 col-xs-12" name="notlp"
+                                    value="notlp">
+                            </div>
+
+                            <div class="riwayat">
+                                <label for="rwyt">
+                                    Riwayat Penyakit
+                                </label>
+                                <textarea type="text" id="rwyt" class="col-lg-8 col-sm-12 col-xs-12">
+                            </textarea>
+                            </div>
+
+                            <div class="pembayaran">
+                                <label class="py-3 col-sm-12" for="pembayaran">
+                                    Pembayaran
+                                </label>
+                                <div class="metode ml-6">
+                                    <input type="radio" id="tunai" name="bayar">
+                                    <label for="tunai">
+                                        Tunai
+                                    </label>
+                                    <input type="radio" id="transfer" name="bayar">
+                                    <label for="transfer">
+                                        Transfer
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="tes mb-4">
+                                <label class="py-3 col-sm-12" for="tes">
+                                    Jenis Tes
+                                </label>
+                                <select name="jenistes" id="tes" class="col-8 py-1">
+                                    <option value="PCR">PCR</option>
+                                    <option value="Antibodi">Antobodi</option>
+                                    <option value="Antigen">Antigen</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                kirim
+                            </button>
+
+
+
                         </div>
-
-                        <div class="tes mb-4">
-                            <label class="py-3 col-sm-12" for="tes">
-                                Jenis Tes
-                            </label>
-                            <select name="jenistes" id="tes" class="col-8 py-1">
-                                <option value="PCR">PCR</option>
-                                <option value="Antibodi">Antobodi</option>
-                                <option value="Antigen">Antigen</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            kirim
-                        </button>
+                    </form>
+                </div>
 
 
 
-                    </div>
-                </form>
+
+
             </div>
-
-
-
-
-
-        </div>
-        <footer>
-            <p class="text-center py-4 bg-dark">Dibuat oleh Yanuar_1202190252</p>
-        </footer>
+            <footer>
+                <p class="text-center py-4 bg-dark">Dibuat oleh Yanuar_1202190252</p>
+            </footer>
 
 
 
@@ -279,30 +276,30 @@
 
 
 
-    </section>
+        </section>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+        <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous">
-    </script>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous">
+        </script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
-    -->
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+        -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+    </body>
 
-</html>
+    </html>
